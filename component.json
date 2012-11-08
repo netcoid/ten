@@ -1,0 +1,10 @@
+{
+  "name": "ten",
+  "version": "0.0.1",
+  "main": ["./ten.reset.css","/ten.base.css"],
+  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/components/jquery.git"
+  }
+}
