@@ -1,0 +1,509 @@
+/* 
+ * TEN FRAMEWORK v0.0.1
+ * Author: rama@wamplo.com, lechsa@wamplo.com, gunturaf@wamplo.com
+ * http://dev.w3.org/html5/spec/single-page.html
+ *
+ * If there is only @url or no @example about the <element> 
+ * then its clear enough
+ */
+
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* TEN FRAMEWORK SECTION */
+body{}
+
+/* <article>
+ * The article element represents a self-contained composition in a document, 
+ * page, application, or site and that is, in principle, independently 
+ * distributable or reusable, e.g. in syndication. This could be a forum post, 
+ * a magazine or newspaper article, a blog entry, a user-submitted comment, 
+ * an interactive widget or gadget, or any other independent item of content.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-article-element
+ */
+article{}
+
+/* <section>
+ * The section element represents a generic section of a document or 
+ * application. A section, in this context, is a thematic grouping of content, 
+ * typically with a heading.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-section-element
+ */
+section{}
+
+/* <nav>
+ * The nav element represents a section of a page that links to other pages or 
+ * to parts within the page: a section with navigation links.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-nav-element
+ */
+nav{}
+
+/* <aside>
+ * The aside element represents a section of a page that consists of content 
+ * that is tangentially related to the content around the aside element, and 
+ * which could be considered separate from that content. Such sections are 
+ * often represented as sidebars in printed typography.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-aside-element
+ * 
+ * @example 
+ * <article>
+ *     <p>text</p>
+ *     <aside class="right">
+ *         <p>text not related</p>
+ *     </aside>
+ * <article>
+ */
+aside{}
+
+/* <h1-h6>
+ * There is only h1-h6 in the html5 spec, so lets stick to it.
+ */
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+
+/* <hgroup>
+ * The hgroup element represents the heading of a section. The element is used 
+ * to group a set of h1–h6 elements when the heading has multiple levels, 
+ * such as subheadings, alternative titles, or taglines.
+ * 
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-hgroup-element
+ *
+ * @examples
+ * <hgroup>
+ *     <h1>Header 1</h1>
+ *     <h2>Header 2</h2>
+ * </hgroup>
+ */
+hgroup{}
+
+/* <header>
+ * The header element represents a group of introductory or navigational aids.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-header-element
+ * 
+ * @example
+ * <header>
+ *     <nav>
+ *         <ul>
+ *             <li>Link 1</li>
+ *             <li>Link 2</li>
+ *          </ul>
+ *     </nav>
+ * <header>
+ */
+header{}
+
+/* <footer>
+ * The footer element represents a footer for its nearest ancestor sectioning 
+ * content or sectioning root element. A footer typically contains information 
+ * about its section such as who wrote it, links to related documents, 
+ * copyright data, and the like.
+ *
+ * @url hhttp://dev.w3.org/html5/spec/single-page.html#the-footer-element
+ * 
+ * @example
+ * <footer><address>{address}</address><footer>
+ */
+footer{}
+
+/* <address>
+ * The footer element represents a footer for its nearest ancestor sectioning 
+ * content or sectioning root element. A footer typically contains information 
+ * about its section such as who wrote it, links to related documents, 
+ * copyright data, and the like.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-address-element
+ * 
+ * @example
+ * <address>
+ *     <a href="../people/raggett/">dave raggett</a>,
+ *     <a href="../people/arnaud/">arnaud le hors</a>,
+ * </address>
+ */
+address{}
+
+/* TEN FRAMEWORK GROUPING CONTENT */
+
+p{}
+
+/* <hr>
+ * element represents a paragraph-level thematic break, e.g. a scene change in 
+ * a story, or a transition to another topic within a section of a reference 
+ * book.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-hr-element
+ */
+hr{}
+
+/* <pre>
+ * For displaying email content, fragments of computer code, ASCII arts.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-pre-element
+ */
+pre{}
+
+/* <blockquote>
+ * The blockquote element represents a section that is quoted from another 
+ * source.
+ * 
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-blockquote-element
+ *
+ * @example
+ * <blockquote cite="http://quotes.com/somequote">
+ *     somequote
+ * </blockquote>
+ */
+blockquote{}
+
+ol{}
+li{}
+dl{}
+dt{}
+dd{}
+
+/* <figure>
+ * The figure element represents some flow content, optionally with a caption, 
+ * that is self-contained and is typically referenced as a single unit from the 
+ * main flow of the document.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-figure-element
+ * 
+ * @example
+ * in <a href="#ex1">explain 1</a>
+ * <figure id="ex1">
+       <figcaption>explain 1</figcaption>
+       <p>the description</p>
+       <pre><code>{maybe some code}</code></pre>
+   </figure>
+ */
+figure{}
+figcaption{}
+
+div{}
+
+/* TEN FRAMEWORK TEXT-LEVEL SEMANTICS */
+a{}
+em{}
+strong{}
+small{}
+
+/* <s>
+ * The s element represents contents that are no longer accurate or no longer 
+ * relevant. like strike
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-s-element
+ * 
+ * Example
+ * <p>price</p>
+ * <p><s>$1</s></p>
+ * <p>free</p>
+ */
+s{}
+
+/* <cite>
+ * The cite element represents the title of a work (e.g. a book, a paper, 
+ * an essay, a poem, a score, a song, a script, a film, a TV show, a game, 
+ * a sculpture, a painting, a theatre production, a play, an opera, a musical, 
+ * an exhibition, a legal case report, etc). This can be a work that is being 
+ * quoted or referenced in detail (i.e. a citation), or it can just be a work 
+ * that is mentioned in passing.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-cite-element
+ *
+ * @example
+ * <p>According to the Wikipedia article <cite>HTML</cite></p>
+ */
+cite{}
+
+/* <q>
+ * The q element represents some phrasing content quoted from another source.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-q-element
+ * 
+ * Example
+ * <p>The man said <q cite="http://www.w3.org/Consortium/">Things that are 
+ * impossible just take longer</q>. I disagreed with him.</p>
+ */
+q{}
+
+/* <dfn>
+* The dfn element represents the defining instance of a term. The paragraph, 
+* description list group, or section that is the nearest ancestor of the dfn 
+* element must also contain the definition(s) for the term given by the dfn 
+* element.
+*
+* @url http://dev.w3.org/html5/spec/single-page.html#the-dfn-element
+*
+* @example
+* <dfn><abbr title="Garage Door Opener">GDO</abbr></dfn>
+*/
+dfn{font-style: italic;}
+abbr{}
+
+/* <time> 
+ * element represents its contents, along with a machine-readable form of those 
+ * contents in the datetime attribute. The kind of content is limited to 
+ * various kinds of dates, times, time-zone offsets, and durations, 
+ * as described below.
+ * 
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-time-element
+ *
+ * @examples
+ * <time>2011-11-12</time>
+ */
+time{}
+
+/* <code>
+ * The code element represents a fragment of computer code. This could be an 
+ * XML element name, a filename, a computer program, or any other string that 
+ * a computer would recognize.
+ * 
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-code-element
+ *
+ * @example
+ * <p>The <code>code</code> element represents a fragment of computer code.</p>
+ */
+code{}
+
+/* <var>
+ * The var element represents a variable. This could be an actual variable in 
+ * a mathematical expression or programming context, an identifier representing 
+ * a constant, a symbol identifying a physical quantity, a function parameter, 
+ * or just be a term used as a placeholder in prose.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-var-element
+ * 
+ * @example
+ * <p>If there are <var>n</var> pipes</p>
+ */
+var{}
+
+/* <samp>
+ * The samp element represents (sample) output from a program or computing 
+ * system.
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-samp-element
+ *
+ * @example
+ * <p>The computer said <samp>Too much cheese in tray two</samp></p>
+ */
+samp{}
+
+/* <kbd>
+ * The kbd element represents user input (typically keyboard input, although it 
+ * may also be used to represent other input, such as voice commands).
+ *
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-kbd-element
+ *
+ * @example
+ * <p>To make George eat an apple, press <kbd><kbd>Shift</kbd>+<kbd>F3</kbd>
+ * </kbd></p>
+ */
+kbd{}
+
+sub{}
+sup{}
+
+i{}
+b{}
+u{}
+
+mark{}
+
+
+/* <ruby>
+ * hiragana will be supported in the future
+ * 
+ * @url http://dev.w3.org/html5/spec/single-page.html#the-ruby-element
+ */
+ruby{}
+rt{}
+rp{}
+
+bdi{}
+bdo{}
+
+br{}
+wbr{}
+
+/* TEN FRAMEWORK EDITS */
+ins{}
+del{}
+
+/* TEN FRAMEWORK EMBEDED CONTENT */
+img{}
+iframe{}
+embed{}
+object{}
+param{}
+video{}
+audio{}
+source{}
+track{}
+canvas{}
+map{}
+area{}
+
+/* TEN FRAMEWORK TABULAR DATA */
+table{}
+caption{}
+colgroup{}
+col{}
+tbody{}
+thead{}
+tfoot{}
+tr{}
+td{}
+th{}
+
+/* TEN FRAMEWORK FORM */
+form{}
+fieldset{}
+legend{}
+input{}
+input[type=hidden]{}
+input[type=text]{}
+input[type=search]{}
+input[type=url]{}
+input[type=email]{}
+input[type=password]{}
+input[type=datetime]{}
+input[type=date]{}
+input[type=month]{}
+input[type=week]{}
+input[type=time]{}
+input[type=datetime-local]{}
+input[type=number]{}
+input[type=range]{}
+input[type=color]{}
+input[type=checkbox]{}
+input[type=radio]{}
+input[type=file]{}
+input[type=submit]{}
+input[type=image]{}
+input[type=reset]{}
+input[type=button]{}
+
+button{}
+select{}
+datalist{}
+optgroup{}
+option{}
+textarea{}
+keygen{}
+output{}
+progress{}
+meter{}
+
+/* TEN FRAMEWORK INTERACTIVE ELEMENT */
+
+details{}
+summary{}
+command{}
+menu{}
+dialog{}
